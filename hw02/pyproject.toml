@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.scripts]
-w2v-vi = "w2v_vi:main"
+hw02 = "hw02:main"
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
@@ -29,6 +29,9 @@ build-backend = "uv_build"
 name = "pytorch-cpu"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
+
+[tool.uv.build-backend]
+module-name = "hw02"
 
 [tool.uv.sources]
 torch = { index = "pytorch-cpu" }
